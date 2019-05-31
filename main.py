@@ -10,7 +10,7 @@ from classes.logger import Logger
 
 def main():
     log = Logger('M').log
-    log(colored('main bot template made by Alex Gompper @573supreme', 'green'))
+    log(colored('main bot template made by Alex Gompper @edzart', 'green'))
     threads = []
     i = 0
     for config in listdir('tasks'):
@@ -21,6 +21,7 @@ def main():
             threads.append(Site(i, 'tasks/' + config))
             threads[i].start()
             i += 1
+
 
 if __name__ == '__main__':
     main()

@@ -2,8 +2,8 @@ import threading
 from json import load
 from time import time, sleep
 
-from logger import Logger
-from product import Product
+from classes.logger import Logger
+from classes.product import Product
 
 
 class Site(threading.Thread):

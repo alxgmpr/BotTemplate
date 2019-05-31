@@ -13,5 +13,5 @@ class Logger:
             try:
                 text = colored(text, color)
             except:
-                print 'WARNING: unrecognized color passed to logger instance'
+                print('WARNING: unrecognized color passed to logger instance')
         print('[{}] :: {}'.format(timestamp, text))
